@@ -1,5 +1,5 @@
 import Image from "next/image";
-import NovelEditor from "./nivel-editor";
+import NovelEditor from "./novel-editor";
 
 export default function Home() {
   return (
