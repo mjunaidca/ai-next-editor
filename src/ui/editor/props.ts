@@ -2,7 +2,7 @@ import { EditorProps } from "@tiptap/pm/view";
 
 export const defaultEditorProps: EditorProps = {
   attributes: {
-    class: `novel-prose-lg novel-prose-stone dark:novel-prose-invert prose-headings:novel-font-title novel-font-default focus:novel-outline-none novel-max-w-full`,
+    class: `prose-lg prose-stone dark:prose-invert prose-headings:font-title font-default focus:outline-none max-w-full`,
   },
   handleDOMEvents: {
     keydown: (_view, event) => {

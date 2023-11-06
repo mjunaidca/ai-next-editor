@@ -7,7 +7,7 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  prefix: "novel-",
+  // prefix: "",
   theme: {
     extend: {
       fontFamily: {
@@ -15,18 +15,18 @@ const config: Config = {
         default: ["var(--font-default)", "system-ui", "sans-serif"],
       },
       colors: {
-        white: "var(--novel-white)",
+        white: "var(--white)",
         stone: {
-          50: "var(--novel-stone-50)",
-          100: "var(--novel-stone-100)",
-          200: "var(--novel-stone-200)",
-          300: "var(--novel-stone-300)",
-          400: "var(--novel-stone-400)",
-          500: "var(--novel-stone-500)",
-          600: "var(--novel-stone-600)",
-          700: "var(--novel-stone-700)",
-          800: "var(--novel-stone-800)",
-          900: "var(--novel-stone-900)",
+          50: "var(--stone-50)",
+          100: "var(--stone-100)",
+          200: "var(--stone-200)",
+          300: "var(--stone-300)",
+          400: "var(--stone-400)",
+          500: "var(--stone-500)",
+          600: "var(--stone-600)",
+          700: "var(--stone-700)",
+          800: "var(--stone-800)",
+          900: "var(--stone-900)",
         },
       },
     },
