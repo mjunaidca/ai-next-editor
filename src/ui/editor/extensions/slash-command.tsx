@@ -21,7 +21,6 @@ import {
   MessageSquarePlus,
   Text,
   TextQuote,
-  Image as ImageIcon,
   Code,
   CheckSquare,
 } from "lucide-react";
@@ -30,7 +29,6 @@ import { toast } from "sonner";
 import va from "@vercel/analytics";
 import { Magic } from "@/ui/icons";
 import { getPrevText } from "@/lib/editor";
-import { startImageUpload } from "@/ui/editor/plugins/upload-images";
 import { NovelContext } from "../provider";
 
 interface CommandItemProps {
@@ -195,27 +193,6 @@ const getSuggestionItems = ({ query }: { query: string }) => {
       icon: <Code size={18} />,
       command: ({ editor, range }: CommandProps) =>
         editor.chain().focus().deleteRange(range).toggleCodeBlock().run(),
-    },
-    {
-      title: "Image",
-      description: "Upload an image from your computer.",
-      searchTerms: ["photo", "picture", "media"],
-      icon: <ImageIcon size={18} />,
-      command: ({ editor, range }: CommandProps) => {
-        editor.chain().focus().deleteRange(range).run();
-        // upload image
-        const input = document.createElement("input");
-        input.type = "file";
-        input.accept = "image/*";
-        input.onchange = async () => {
-          if (input.files?.length) {
-            const file = input.files[0];
-            const pos = editor.view.state.selection.from;
-            startImageUpload(file, editor.view, pos);
-          }
-        };
-        input.click();
-      },
     },
   ].filter((item) => {
     if (typeof query === "string" && query.length > 0) {

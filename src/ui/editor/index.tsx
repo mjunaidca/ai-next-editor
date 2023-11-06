@@ -12,7 +12,6 @@ import va from "@vercel/analytics";
 import { defaultEditorContent } from "./default-content";
 import { EditorBubbleMenu } from "./bubble-menu";
 import { getPrevText } from "@/lib/editor";
-import { ImageResizer } from "./extensions/image-resizer";
 import { EditorProps } from "@tiptap/pm/view";
 import { Editor as EditorClass, Extensions } from "@tiptap/core";
 import { NovelContext } from "./provider";
@@ -214,7 +213,6 @@ export default function Editor({
         className={className}
       >
         {editor && <EditorBubbleMenu editor={editor} />}
-        {editor?.isActive("image") && <ImageResizer editor={editor} />}
         <EditorContent editor={editor} />
       </div>
     </NovelContext.Provider>

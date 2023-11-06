@@ -20,9 +20,6 @@ dependencies:
   '@tiptap/extension-horizontal-rule':
     specifier: ^2.1.7
     version: 2.1.12(@tiptap/core@2.1.12)(@tiptap/pm@2.1.12)
-  '@tiptap/extension-image':
-    specifier: ^2.1.7
-    version: 2.1.12(@tiptap/core@2.1.12)
   '@tiptap/extension-link':
     specifier: ^2.1.7
     version: 2.1.12(@tiptap/core@2.1.12)(@tiptap/pm@2.1.12)
@@ -1108,14 +1105,6 @@ packages:
     dependencies:
       '@tiptap/core': 2.1.12(@tiptap/pm@2.1.12)
       '@tiptap/pm': 2.1.12
-    dev: false
-
-  /@tiptap/extension-image@2.1.12(@tiptap/core@2.1.12):
-    resolution: {integrity: sha512-VCgOTeNLuoR89WoCESLverpdZpPamOd7IprQbDIeG14sUySt7RHNgf2AEfyTYJEHij12rduvAwFzerPldVAIJg==}
-    peerDependencies:
-      '@tiptap/core': ^2.0.0
-    dependencies:
-      '@tiptap/core': 2.1.12(@tiptap/pm@2.1.12)
     dev: false
 
   /@tiptap/extension-italic@2.1.12(@tiptap/core@2.1.12):
