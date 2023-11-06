@@ -19,7 +19,7 @@ export default function NovelEditor() {
     <>
       {/* <form onSubmit={handleSubmit} className="relative w-full max-w-screen-lg"> */}
       <h2 className="font-bold py-3 pt-5">
-        Here's the Notion Styled AI Power Editor
+        Here is the Notion Styled AI Power Editor
       </h2>
       <Editor
         onUpdate={(editor) => {
