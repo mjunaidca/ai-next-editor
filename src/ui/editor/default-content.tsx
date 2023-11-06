@@ -4,7 +4,7 @@ export const defaultEditorContent = {
     {
       type: "heading",
       attrs: { level: 2 },
-      content: [{ type: "text", text: "Introducing Novel" }],
+      content: [{ type: "text", text: "Built on top of Novel" }],
     },
     {
       type: "paragraph",
@@ -65,7 +65,12 @@ export const defaultEditorContent = {
     {
       type: "heading",
       attrs: { level: 3 },
-      content: [{ type: "text", text: "Installation" }],
+      content: [
+        {
+          type: "text",
+          text: "Clone the repo to get this customizable editor or use novel",
+        },
+      ],
     },
     {
       type: "codeBlock",
@@ -75,7 +80,7 @@ export const defaultEditorContent = {
     {
       type: "heading",
       attrs: { level: 3 },
-      content: [{ type: "text", text: "Usage" }],
+      content: [{ type: "text", text: "Novel Usage" }],
     },
     {
       type: "codeBlock",
@@ -142,92 +147,6 @@ export const defaultEditorContent = {
       type: "heading",
       attrs: { level: 3 },
       content: [{ type: "text", text: "Learn more" }],
-    },
-    {
-      type: "taskList",
-      content: [
-        {
-          type: "taskItem",
-          attrs: { checked: false },
-          content: [
-            {
-              type: "paragraph",
-              content: [
-                { type: "text", text: "Star us on " },
-                {
-                  type: "text",
-                  marks: [
-                    {
-                      type: "link",
-                      attrs: {
-                        href: "https://github.com/steven-tey/novel",
-                        target: "_blank",
-                        class:
-                          "text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer",
-                      },
-                    },
-                  ],
-                  text: "GitHub",
-                },
-              ],
-            },
-          ],
-        },
-        {
-          type: "taskItem",
-          attrs: { checked: false },
-          content: [
-            {
-              type: "paragraph",
-              content: [
-                { type: "text", text: "Install the " },
-                {
-                  type: "text",
-                  marks: [
-                    {
-                      type: "link",
-                      attrs: {
-                        href: "https://www.npmjs.com/package/novel",
-                        target: "_blank",
-                        class:
-                          "text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer",
-                      },
-                    },
-                  ],
-                  text: "NPM package",
-                },
-              ],
-            },
-          ],
-        },
-        {
-          type: "taskItem",
-          attrs: { checked: false },
-          content: [
-            {
-              type: "paragraph",
-              content: [
-                {
-                  type: "text",
-                  marks: [
-                    {
-                      type: "link",
-                      attrs: {
-                        href: "https://vercel.com/templates/next.js/novel",
-                        target: "_blank",
-                        class:
-                          "text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer",
-                      },
-                    },
-                  ],
-                  text: "Deploy your own",
-                },
-                { type: "text", text: " to Vercel" },
-              ],
-            },
-          ],
-        },
-      ],
-    },
+    }
   ],
 };
